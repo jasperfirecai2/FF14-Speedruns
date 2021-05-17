@@ -175,17 +175,17 @@
                     </Actions>
                     <Condition Enabled="false" Grouping="Or" />
                   </Trigger>
-                  <Trigger Enabled="false" Name="A Magitek armor" Id="3f401848-645c-4620-81bc-bbe82c04f4fa" RegularExpression="\[.{14}03:[A-F0-9]{8}:Added new combatant (?&lt;target&gt;[a-zA-Z-' ]{3,40})\.">
+                  <Trigger Enabled="false" Name="A Magitek armor" Id="3f401848-645c-4620-81bc-bbe82c04f4fa" RegularExpression="\[.{14}03:[A-F0-9]{8}:Added new combatant (?&lt;target&gt;[a-zA-Z-' ]{3,40})\." PrevActionsRefire="Deny">
                     <Actions>
-                      <Action OrderNumber="1" LogLevel="-1" MouseX="" MouseY="" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" TriggerOp="DisableTrigger" TriggerId="646687dd-3045-42af-82ad-c88fd5a769e1" ActionType="Trigger">
+                      <Action OrderNumber="1" LogLevel="-1" MouseX="" MouseY="" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" TriggerOp="DisableTrigger" TriggerId="3f401848-645c-4620-81bc-bbe82c04f4fa" ActionType="Trigger">
                         <Condition Enabled="false" Grouping="Or" />
                         <Conditions />
                       </Action>
-                      <Action OrderNumber="2" LogLevel="-1" MouseX="" MouseY="" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" TriggerId="734b501a-3ce3-4751-b05c-1285eff35e33" TriggerForce="true" ActionType="Trigger">
+                      <Action OrderNumber="2" LogLevel="-1" MouseX="" MouseY="" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" TriggerOp="DisableTrigger" TriggerId="646687dd-3045-42af-82ad-c88fd5a769e1" ActionType="Trigger">
                         <Condition Enabled="false" Grouping="Or" />
                         <Conditions />
                       </Action>
-                      <Action OrderNumber="3" LogLevel="-1" MouseX="" MouseY="" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" TriggerOp="DisableTrigger" TriggerId="3f401848-645c-4620-81bc-bbe82c04f4fa" ActionType="Trigger">
+                      <Action OrderNumber="3" LogLevel="-1" MouseX="" MouseY="" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" TriggerId="734b501a-3ce3-4751-b05c-1285eff35e33" TriggerForce="true" ActionType="Trigger">
                         <Condition Enabled="false" Grouping="Or" />
                         <Conditions />
                       </Action>
@@ -268,9 +268,7 @@
                         <Conditions />
                       </Action>
                     </Actions>
-                    <Condition Enabled="false" Grouping="Or">
-                      <ConditionSingle Enabled="true" ExpressionL="${target}" ExpressionTypeL="String" ExpressionR="Mark II Magitek Colossus" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
-                    </Condition>
+                    <Condition Enabled="false" Grouping="Or" />
                   </Trigger>
                   <Trigger Enabled="false" Name="7 Take the elevator" Id="78e58bbe-dfa6-4c02-ba7d-fc75c85cca67" RegularExpression="\[.{14}00:0044:Cid:You'll need proper firepower to blast through that\. Try and find another path to the armor bay\.">
                     <Actions>
@@ -348,15 +346,19 @@
                   </Trigger>
                   <Trigger Enabled="false" Name="B Cermet bulkhead 1" Id="f1b757fa-3280-4576-abb1-c77a68b2d6b8" RegularExpression="\[.{14}19:Cermet Bulkhead">
                     <Actions>
-                      <Action OrderNumber="1" LogLevel="-1" MouseX="" MouseY="" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" TriggerId="734b501a-3ce3-4751-b05c-1285eff35e33" TriggerForce="regexp,conditions,refire" ActionType="Trigger">
+                      <Action OrderNumber="1" LogLevel="-1" MouseX="" MouseY="" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" TriggerOp="EnableTrigger" TriggerId="6e7a42bd-ff99-477f-9ce2-460ca0ee7672" ActionType="Trigger">
                         <Condition Enabled="false" Grouping="Or" />
                         <Conditions />
                       </Action>
-                      <Action OrderNumber="2" LogLevel="-1" MouseX="" MouseY="" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" TriggerOp="DisableTrigger" TriggerId="3f401848-645c-4620-81bc-bbe82c04f4fa" ActionType="Trigger">
+                      <Action OrderNumber="2" LogLevel="-1" MouseX="" MouseY="" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" TriggerId="734b501a-3ce3-4751-b05c-1285eff35e33" TriggerForce="regexp,conditions,refire" ActionType="Trigger">
                         <Condition Enabled="false" Grouping="Or" />
                         <Conditions />
                       </Action>
-                      <Action OrderNumber="3" LogLevel="-1" MouseX="" MouseY="" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" TriggerOp="EnableTrigger" TriggerId="6e7a42bd-ff99-477f-9ce2-460ca0ee7672" ActionType="Trigger">
+                      <Action OrderNumber="3" LogLevel="-1" MouseX="" MouseY="" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" TriggerOp="DisableTrigger" TriggerId="f1b757fa-3280-4576-abb1-c77a68b2d6b8" ActionType="Trigger">
+                        <Condition Enabled="false" Grouping="Or" />
+                        <Conditions />
+                      </Action>
+                      <Action OrderNumber="4" LogLevel="-1" MouseX="" MouseY="" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" TriggerOp="DisableTrigger" TriggerId="3f401848-645c-4620-81bc-bbe82c04f4fa" ActionType="Trigger">
                         <Condition Enabled="false" Grouping="Or" />
                         <Conditions />
                       </Action>
